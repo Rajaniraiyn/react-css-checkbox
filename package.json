@@ -1,0 +1,35 @@
+{
+  "name": "react-css-checkbox",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "prestart": "rimraf dist",
+    "start": "parcel src/index.jsx",
+    "prebuild": "rimraf dist",
+    "build": "parcel build src/index.jsx"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-nano-react-app": "^0.1.0",
+    "parcel": "^2.0.0-alpha.3.2",
+    "rimraf": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ]
+  }
+}
